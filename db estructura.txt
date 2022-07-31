@@ -1,0 +1,107 @@
+cliente
+	id_cliente
+	nombre
+	telefono
+	estado
+
+categoria 
+	id_categoria
+	categoria
+	abreviatura_categoria
+	descripcion
+	estado
+
+departamento
+	id_departamento
+	departamento
+	estado
+
+sucursal
+	id_sucursal
+	id_provincia
+	sucursal
+	estado
+
+empleado
+	id_empleado
+	id_sucursal
+	usuario
+	password
+	RUC
+	cargo
+	estado
+
+datos_empleado
+	id_datos_empleado
+	id_empleado
+	nombres
+	apellidos
+	direccion
+	telefono
+	cedula
+	estado
+
+tipo_pago
+	id_tipo_pago
+	tipo
+	estado
+
+compras
+	id_compra
+	id_cliente
+	id_empleado
+	id_tipo_pago
+	id_sucursal
+	id_producto
+	monto
+	cantidad
+	precio
+	total_compra
+	fecha_insercion
+	estado_compra
+	estado
+	
+	
+producto
+	id_producto
+	id_categoria
+	id_proveedor
+	marca
+	nombre_producto
+	precio
+	abrev_producto
+	descripcion_producto
+	estado
+
+proveedor
+	id_proveedor
+	nombre
+	telefono
+	comentario
+	estado
+
+provincia
+	id_provincia
+	nombre
+	estado
+
+
+inventario
+	id_inventario
+	id_producto
+	cantidad
+	precio
+	id_usuario_insercion
+	fecha_insercion
+	estado
+
+administrador 
+	id_administrador
+	id_sucursal_ultima_sesion
+	nombre
+	apellido
+	usuario
+	password
+	ultima_sesion
+	estado
+
